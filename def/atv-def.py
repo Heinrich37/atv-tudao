@@ -136,22 +136,69 @@
 #         print("Não é um palindromo")
 
 # Crie uma função que gere uma lista com os n primeiros números pares.
-def gerar_pares():
-    n = int(input("Quantos números pares você quer? "))
+# def gerar_pares():
+#     n = int(input("Quantos números pares você quer? "))
 
-    # Cria uma lista de pares, multiplicando por 2
-    pares = []
-    for i in range(n):
-        pares.append(i * 2)
+#     # Cria uma lista de pares, multiplicando por 2
+#     pares = []
+#     for i in range(n):
+#         pares.append(i * 2)
 
-    # Mostramos a lista de pares
-    print("Números pares:", pares)
-
+#     # Mostramos a lista de pares
+#     print("Números pares:", pares)
+# gerar_pares()
 
 # Escreva uma função que receba um número e retorne a tabuada dele (de 1 a 10).
+# def tabuada():
+#     numero = int(input("Digite um número para ver a tabuada: "))
+
+#     # Mostra o número multiplicado de 1 a 10
+#     for i in range(1, 11):
+#         resultado = numero * i
+#         print(f"{numero} x {i} = {resultado}")
+
+# tabuada()
+
 
 # Crie uma função que calcule a área de um retângulo (base × altura).
+# def area_retangulo():
+#     base = float(input("Digite a base do retângulo: "))
+#     altura = float(input("Digite a altura do retângulo: "))
+
+#     # Multiplica base x altura
+#     area = base * altura
+
+#     # Mostra a área
+#     print("A área do retângulo é:", area)
+
+# area_retangulo()
+
 
 # Crie uma função que retorne o menor valor entre três números.
+# def menor_valor():
+#     a = float(input("Digite o primeiro número: "))
+#     b = float(input("Digite o segundo número: "))
+#     c = float(input("Digite o terceiro número: "))
+
+#     # Comparamos os três usando a função min()
+#     menor = min(a, b, c)
+
+#     # Mostramos o menor número
+#     print("O menor valor é:", menor)
+
+# menor_valor()
+
 
 # Escreva uma função que simule o lançamento de um dado de 6 faces (use random.randint).
+import random
+
+def rolar_dado():
+    input("Pressione Enter para rolar o dado...")
+
+    # Gera um número aleatório entre 1 e 6
+    resultado = random.randint(1, 6)
+
+    # Mostra o número do dado
+    print("Você tirou:", resultado)
+
+rolar_dado()
