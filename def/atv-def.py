@@ -89,26 +89,64 @@
 
 
 # Crie uma função que receba um número e retorne uma lista com todos os divisores dele.
-def divisores():
-    numero = int(input("Digite um número: "))
-    lista_divisores = []
-    for i in range(1, numero + 1):
-        if numero % i == 0:
-            lista_divisores.append(i)
-    print("Divisores:", lista_divisores)
-divisores()
+# def divisores():
+#     numero = int(input("Digite um número: "))
+#     lista_divisores = []
+#     for i in range(1, numero + 1):
+#         if numero % i == 0:
+#             lista_divisores.append(i)
+#     print("Divisores:", lista_divisores)
+# divisores()
 
 
 
 # Crie uma função que converta graus Celsius para Fahrenheit.
+# def converter():
+#     celsius = float(input("Informe a temperatura em Celsius: "))
+#     fahrenheit = (celsius * 9/5) + 32
+#     print(f"{celsius}°C em Fahrenheit é: {fahrenheit}°F")
+# converter()
+
+
 
 # Crie uma função que receba uma string e retorne a mesma string sem espaços.
+# def remover_espacos(texto):
+#     return texto.replace(" ","")
+# frase = input("Digite uma frase para remover os espaços: ")
+# resultado = remover_espacos(frase)
+# print(resultado)
+#.replace(" ", "") troca cada espaço por nada
 
 # Crie uma função que receba uma lista e retorne a média dos elementos.
+# def calcular_media(lista):
+#     return sum(lista) / len(lista)
+
+# numeros = input("Digite números separados por vírgula: ")
+# lista = [float(n) for n in numeros.split(",")]
+# media = calcular_media(lista)
+# print("A média é:", media)
 
 # Escreva uma função que receba uma palavra e retorne True se ela for um palíndromo.
+# def ver_palindromo():
+#     palavra = input("escreva uma só palavra: ")
+#     ao_contrario = palavra[::-1]
+#     if palavra == ao_contrario:
+#         print("É um palindromo")
+#     else:
+#         print("Não é um palindromo")
 
 # Crie uma função que gere uma lista com os n primeiros números pares.
+def gerar_pares():
+    n = int(input("Quantos números pares você quer? "))
+
+    # Cria uma lista de pares, multiplicando por 2
+    pares = []
+    for i in range(n):
+        pares.append(i * 2)
+
+    # Mostramos a lista de pares
+    print("Números pares:", pares)
+
 
 # Escreva uma função que receba um número e retorne a tabuada dele (de 1 a 10).
 
