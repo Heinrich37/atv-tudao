@@ -59,18 +59,46 @@
 
 
 # Crie uma função que inverta uma string.
-def string():
-    texto = input("Informe um numero: ")
-    invertida = texto[::-1]
-    print(f"a frase invertida é: {invertida}")
+# def string():
+#     texto = input("Informe um numero: ")
+#     invertida = texto[::-1]
+#     print(f"a frase invertida é: {invertida}")
     
-string()
+# string()
 
 # Crie uma função que receba uma lista de nomes e retorne apenas os nomes com mais de 5 letras.
+# def verificar_nome(a):
+#     if len(a) > 5:
+#         print("Nome com mais de 5 letras:", a)
+#     else:
+#         print("Nome com 5 letras ou menos.")
+
+# nome_digitado = input("Digite um nome: ")
+# verificar_nome(nome_digitado)
 
 # Escreva uma função que conte quantas vogais há em uma string.
+# def contar_vogais():
+#     texto = input("Digite uma frase: ")
+#     vogais = "aeiouAEIOU"
+#     contador = 0
+#     for letra in texto:
+#         if letra in vogais:
+#             contador += 1
+#     print(f"A frase tem {contador} vogais.")
+# contar_vogais()
+
 
 # Crie uma função que receba um número e retorne uma lista com todos os divisores dele.
+def divisores():
+    numero = int(input("Digite um número: "))
+    lista_divisores = []
+    for i in range(1, numero + 1):
+        if numero % i == 0:
+            lista_divisores.append(i)
+    print("Divisores:", lista_divisores)
+divisores()
+
+
 
 # Crie uma função que converta graus Celsius para Fahrenheit.
 
